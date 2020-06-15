@@ -1,0 +1,8 @@
+{
+  "devDependencies": {
+    "fs-extra": "^9.0.1"
+  },
+  "dependencies": {
+    "ejs": "^3.1.3"
+  }
+}
