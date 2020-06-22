@@ -40,6 +40,8 @@
   "dependencies": {
     "bootstrap": "4.4.1",
     "del": "^5.1.0",
+    "gulp-htmlmin": "^5.0.1",
+    "gulp-imagemin": "^7.1.0",
     "gulp-load-plugins": "^2.0.3",
     "jquery": "3.4.1",
     "popper.js": "1.16.1"
@@ -52,7 +54,6 @@
     "gulp-babel": "^8.0.0",
     "gulp-clean-css": "^4.3.0",
     "gulp-if": "^3.0.0",
-    "gulp-imagemin": "^7.1.0",
     "gulp-jsmin": "^0.1.5",
     "gulp-sass": "^4.1.0",
     "gulp-swig": "^0.9.1",
