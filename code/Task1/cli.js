@@ -26,41 +26,6 @@ inquirer.prompt([
   readAllFile(tempPath,destDir,copy,answers)
 })
 
-// const readAllFile = (answers,filePath) => {
-//   fs.readdir(filePath, (err,files)=> {
-//     if(err) {
-//       console.log(`files read error: ${err}`)
-//     }
-//     else {
-//       files.forEach((file)=> {
-//         const fileDir = path.join(filePath,file);
-//         fs.stat(fileDir,(err,stats)=> {
-//           if(err) {
-//             conosle.log(`${fileDir} read error`);
-//           }
-//           else {
-//             const isFile =stats.isFile(); // is File, not Dir
-//             const isDir = stats.isDirectory();
-//             if(isFile) {
-//               const fileContent = fs.readFileSync(fileDir)
-//               console.log(fileDir)
-//               fs.writeFileSync(path.join(destDir,file),fileContent)
-//             }
-//             if(isDir) {
-//               readAllFile(answers,fileDir)
-//             }
-//           }
-//         })
-//       })
-//     }
-//   })
-// }
-
-//直接拷贝,无法用模板引擎编译
-// const readAllFile = (answers) => {
-//   fsEstra.copy(tempPath,destDir);
-// }
-
 var copy=function(src,dst,answers){
   //读取目录
   fs.readdir(src,function(err,paths){
@@ -82,9 +47,6 @@ var copy=function(src,dst,answers){
                 ejs.renderFile(_src,answers,(err,results) => {
                   fs.writeFileSync(_dst,results);
                 })
-                  // readable=fs.createReadStream(_src);//创建读取流
-                  // writable=fs.createWriteStream(_dst);//创建写入流
-                  // readable.pipe(writable);
               }else if(st.isDirectory()){
                 readAllFile(_src,_dst,copy,answers);
               }
@@ -105,5 +67,3 @@ var readAllFile=function(src,dst,callback,answers){
       }
   })
 }
-
-// exists('../from','../to',copy)
