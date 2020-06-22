@@ -41,7 +41,7 @@
     "bootstrap": "4.4.1",
     "grunt-contrib-concat": "^1.0.1",
     "grunt-css": "^0.5.4",
-    "jquery": "3.4.1",
+    "jquery": "3.5.1",
     "popper.js": "1.16.1"
   },
   "devDependencies": {
