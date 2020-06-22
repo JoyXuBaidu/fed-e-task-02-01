@@ -39,10 +39,31 @@
   ],
   "dependencies": {
     "bootstrap": "4.4.1",
+    "grunt-contrib-concat": "^1.0.1",
+    "grunt-css": "^0.5.4",
     "jquery": "3.4.1",
     "popper.js": "1.16.1"
   },
   "devDependencies": {
+    "@babel/core": "^7.10.3",
+    "@babel/preset-env": "^7.10.3",
+    "grunt": "^1.1.0",
+    "grunt-babel": "^8.0.0",
+    "grunt-browser-sync": "^2.2.0",
+    "grunt-contrib-clean": "^2.0.0",
+    "grunt-contrib-copy": "^1.0.0",
+    "grunt-contrib-htmlmin": "^3.1.0",
+    "grunt-contrib-imagemin": "^4.0.0",
+    "grunt-contrib-sass": "^1.0.0",
+    "grunt-contrib-uglify": "^4.0.1",
+    "grunt-contrib-watch": "^1.1.0",
+    "grunt-swigtemplates": "^0.1.2",
+    "grunt-useref": "0.0.16",
+    "grunt-web-swig": "^0.3.1",
+    "imagemin-optipng": "^8.0.0",
+    "imagemin-svgo": "^8.0.0",
+    "load-grunt-tasks": "^5.1.0",
+    "sass": "^1.26.8"
   },
   "engines": {
     "node": ">=6"
